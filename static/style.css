@@ -1,0 +1,313 @@
+body {
+  background: whitesmoke;
+  color: white;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  background: #333333;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.img-container {
+  text-align: center;
+}
+
+/* Plot Area */
+.plot-area > .plot {
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+}
+
+.tab {
+  overflow: hidden;
+  border: 3px solid #ccc;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #e5e5e5;
+}
+
+.tab button.active {
+  background-color: #e5e5e5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.plot-margin {
+  margin: 0 auto;
+}
+
+/* Title */
+.col-lg-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Card Box */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #b03610;
+  border: 1px solid white;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.12);
+  margin: 30px 0;
+  color: white;
+}
+
+.card > hr {
+  margin: 0;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  background-color: #2f9749;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+  margin-top: -0.375rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-header-tabs {
+  margin: 0 -0.625rem;
+  border-bottom: 0;
+}
+
+.card-header-pills {
+  margin: 0 -0.625rem;
+}
+
+.card-img-overlay {
+  padding: 1.25rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-img-bottom {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-deck .card {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .card-deck {
+    flex-flow: row wrap;
+    margin: 0 -15px;
+  }
+  .card-deck .card {
+    margin: 0 15px 15px;
+  }
+}
+
+.card-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-group > .card {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .card-group {
+    flex-flow: row wrap;
+  }
+  .card-group > .card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+}
+
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 3;
+    column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/* Card Header Variants */
+.card-header-primary,
+.card-header-danger,
+.card-header-rose,
+.card-header-warning,
+.card-header-info,
+.card-header-success {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14), 0 7px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.card-header-primary {
+  background-color: hsl(110, 73%, 28%);
+}
+
+.card-header-danger {
+  background-color: #f44336;
+}
+
+.card-header-rose {
+  background-color: #e91e63;
+}
+
+.card-header-warning {
+  background-color: #ff9800;
+}
+
+.card-header-info {
+  background-color: #00bcd4;
+}
+
+.card-header-success {
+  background-color: #4caf50;
+}
+
+.card [class*="card-header-"] {
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.card [class*="card-header-"] .card-title {
+  color: #fff;
+}
+
+.card [class*="card-header-"] .card-category {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card [class*="card-header-"] .card-category a {
+  color: #fff;
+}
+
+.card [class*="card-header-"] .card-icon,
+.card [class*="card-header-"] .card-text {
+  background-color: hsl(110, 73%, 28%);
+  padding: 15px;
+  border-radius: 3px;
+  float: left;
+}
+
+.card [class*="card-header-"] .card-text {
+  display: inline-block;
+  margin-right: 0;
+}
+
+.card [class*="card-header-"] .card-text .card-title {
+  color: #fff;
+}
+
+.card [class*="card-header-"] .ct-chart .card-title {
+  color: #fff;
+}
+
+.card [class*="card-header-"] .ct-chart .card-category {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.card [class*="card-header-"] .ct-chart .ct-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card [class*="card-header-"] .ct-chart .ct-grid {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.card [class*="card-header-"] .ct-chart .ct-series-a .ct-point,
+.card [class*="card-header-"] .ct-chart .ct-series-a .ct-line,
+.card [class*="card-header-"] .ct-chart .ct-series-a .ct-bar,
+.card [class*="card-header-"] .ct-chart .ct-series-a .ct-slice-donut {
+  stroke: rgba(255, 255, 255, 0.8);
+}
+
+.card [class*="card-header-"] .ct-chart .ct-series-a .ct-slice-pie,
+.card [class*="card-header-"] .ct-chart .ct-series-a .ct-area {
+  fill: rgba(255, 255, 255, 0.4);
+}
+
+.card [class*="card-header-"] .ct-chart .ct-bar {
+  stroke-width: 10px;
+}
+
+.card [class*="card-header-"] .ct-chart .ct-point {
+  stroke-width: 10px;
+}
+
+.card [class*="card-header-"] .ct-chart .ct-line {
+  fill: none;
+  stroke-width: 4px;
+}
+
+.card [data-header-animation="true"] {
+  transform: translate3d(0, 0, 0);
+  transition: all 300ms cubic-bezier(0.34, 1.61, 0.7, 1);
+}
